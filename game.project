@@ -1,0 +1,34 @@
+[project]
+title = ironsource
+dependencies#0 = https://github.com/britzl/gooey/archive/8.0.0.zip
+
+[bootstrap]
+main_collection = /example/main.collectionc
+
+[input]
+game_binding = /input/game.input_bindingc
+
+[display]
+width = 540
+height = 960
+dynamic_orientation = 0
+
+[script]
+shared_state = 1
+
+[library]
+include_dirs = ironsource
+
+[ios]
+bundle_identifier = com.defironsource.test
+
+[android]
+package = com.defironsource.test
+minimum_sdk_version = 19
+
+[ironsource]
+app_key = <put_ironsource_app_id_here>
+
+[admob]
+app_id = <put_admob_app_id_here>
+
